@@ -1,1 +1,38 @@
-/build/
+# Eclipse / STS
+.classpath
+.project
+.settings/
+bin/
+
+# Java
+*.class
+*.log
+
+# Build directories
+target/
+build/
+
+# Tomcat / Web servers
+*.war
+work/
+webapps/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Node / npm (if used later)
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Uploads (PDF Reports)
+reports/
+WebContent/reports/
