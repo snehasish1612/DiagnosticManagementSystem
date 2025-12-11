@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>Diagnostic Management System</display-name>
+
+    <!-- Patient Servlet -->
+    <servlet>
+        <servlet-name>PatientServlet</servlet-name>
+        <servlet-class>com.dms.servlet.PatientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientServlet</servlet-name>
+        <url-pattern>/PatientServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Analyst Servlet -->
+    <servlet>
+        <servlet-name>AnalystServlet</servlet-name>
+        <servlet-class>com.dms.servlet.AnalystServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AnalystServlet</servlet-name>
+        <url-pattern>/AnalystServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin Servlet -->
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.dms.servlet.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/AdminServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Appointment Servlet -->
+    <servlet>
+        <servlet-name>AppointmentServlet</servlet-name>
+        <servlet-class>com.dms.servlet.AppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AppointmentServlet</servlet-name>
+        <url-pattern>/AppointmentServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Report Servlet -->
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>com.dms.servlet.ReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/ReportServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Payment Servlet -->
+    <servlet>
+        <servlet-name>PaymentServlet</servlet-name>
+        <servlet-class>com.dms.servlet.PaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentServlet</servlet-name>
+        <url-pattern>/PaymentServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Test Servlet -->
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.dms.servlet.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/TestServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Logout Servlet -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.dms.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Admin extra actions -->
+	<servlet>
+    	<servlet-name>AdminActionsServlet</servlet-name>
+    	<servlet-class>com.dms.servlet.AdminActionsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>AdminActionsServlet</servlet-name>
+    	<url-pattern>/AdminActionsServlet</url-pattern>
+	</servlet-mapping>
+    
+
+    <!-- Optionally set UTF-8 encoding filter here if needed -->
+
+    <!-- Welcome page -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

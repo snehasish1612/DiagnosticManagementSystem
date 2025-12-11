@@ -1,0 +1,18 @@
+<%@ page session="true" %>
+<%
+    String backUrl = request.getContextPath() + "/index.jsp";
+
+    if (session.getAttribute("admin") != null) {
+        backUrl = request.getContextPath() + "/dashboard_admin.jsp";
+    } else if (session.getAttribute("analyst") != null) {
+        backUrl = request.getContextPath() + "/dashboard_analyst.jsp";
+    } else if (session.getAttribute("patient") != null) {
+        backUrl = request.getContextPath() + "/dashboard_patient.jsp";
+    }
+%>
+
+<div class="container mt-3">
+    <a href="<%= backUrl %>" class="btn btn-outline-secondary btn-sm">
+       Back to Dashboard
+    </a>
+</div>
