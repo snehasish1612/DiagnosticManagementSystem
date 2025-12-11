@@ -29,22 +29,23 @@ This helps contributors understand where code, servlets, JSPs, and resources are
 ```
 DiagnosticManagementSystem/
 ├── src/
-│   ├── com.dms.controller/        # Controllers (Servlets)
+│   ├── com.dms.controller/        # Controllers (intermediate request-handling logic)
+│   ├── com.dms.servlet/           # Actual Servlets (HttpServlet implementations)
 │   ├── com.dms.dao/               # DAO layer (Database Access)
 │   ├── com.dms.model/             # POJOs / Model classes
-│   ├── com.dms.servlet/           # Additional Servlets
 │   ├── com.dms.util/              # Utility classes (e.g., HashUtil)
 │
 ├── WebContent/
 │   ├── css/                       # Stylesheets
-│   ├── components/                # Reusable JSP fragments (header.jspf, footer.jspf, back_button.jspf)
-│   ├── reports/                   # Uploaded reports (static file serving)
-│   ├── *.jsp                      # JSP pages
+│   ├── components/                # JSP fragments (header.jspf, footer.jspf, back_button.jspf)
+│   ├── reports/                   # Uploaded reports (static files)
+│   ├── *.jsp                      # JSP pages (Views)
 │   └── WEB-INF/
 │       └── web.xml                # Deployment descriptor
 │
 ├── .gitignore
 └── README.md
+
 ```
 
 
