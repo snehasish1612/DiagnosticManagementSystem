@@ -25,6 +25,8 @@ A Java (JSP + Servlet) web application for managing diagnostic tests, appointmen
 
 Below is the folder layout for the **Diagnostic Management System** project.  
 This helps contributors understand where code, servlets, JSPs, and resources are located.
+
+```
 DiagnosticManagementSystem/
 ├── src/
 │   ├── com.dms.controller/        # Controllers (Servlets)
@@ -43,6 +45,7 @@ DiagnosticManagementSystem/
 │
 ├── .gitignore
 └── README.md
+```
 
 
 ---
