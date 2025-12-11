@@ -9,7 +9,7 @@ A Java (JSP + Servlet) web application for managing diagnostic tests, appointmen
 **Stack**
 - Java (JSP + Servlets)
 - MySQL
-- Bootstrap (frontend)
+- HTML, CSS, Bootstrap (frontend)
 - Apache Tomcat 9
 - Eclipse IDE
 - Git & GitHub
@@ -21,23 +21,25 @@ A Java (JSP + Servlet) web application for managing diagnostic tests, appointmen
 
 ---
 
-## 📁 Project structure
+## 📁 Project Structure
 
+Below is the folder layout for the **Diagnostic Management System** project.  
+This helps contributors understand where code, servlets, JSPs, and resources are located.
 DiagnosticManagementSystem/
 ├── src/
-│ ├── com.dms.controller/ # Controllers (servlets)
-│ ├── com.dms.dao/ # DAO (DB access)
-│ ├── com.dms.model/ # POJOs / models
-│ ├── com.dms.servlet/ # Servlets (alternate package name)
-│ ├── com.dms.util/ # HashUtil
+│   ├── com.dms.controller/        # Controllers (Servlets)
+│   ├── com.dms.dao/               # DAO layer (Database Access)
+│   ├── com.dms.model/             # POJOs / Model classes
+│   ├── com.dms.servlet/           # Additional Servlets
+│   ├── com.dms.util/              # Utility classes (e.g., HashUtil)
 │
 ├── WebContent/
-│ ├── css/
-│ ├── components/ # header.jspf, footer.jspf, back_button.jspf
-│ ├── reports/ # uploaded reports (served statically)
-│ ├── *.jsp # JSP pages
-│ └── WEB-INF/
-│ └── web.xml
+│   ├── css/                       # Stylesheets
+│   ├── components/                # Reusable JSP fragments (header.jspf, footer.jspf, back_button.jspf)
+│   ├── reports/                   # Uploaded reports (static file serving)
+│   ├── *.jsp                      # JSP pages
+│   └── WEB-INF/
+│       └── web.xml                # Deployment descriptor
 │
 ├── .gitignore
 └── README.md
