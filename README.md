@@ -8,6 +8,7 @@ A Java (JSP + Servlet) web application for managing diagnostic tests, appointmen
 
 **Stack**
 - Java (JSP + Servlets)
+- JDBC
 - MySQL
 - HTML, CSS, Bootstrap (frontend)
 - Apache Tomcat 9
